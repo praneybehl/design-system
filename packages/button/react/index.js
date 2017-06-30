@@ -51,7 +51,8 @@ const renderIcon = props =>
       </div>
     : null
 
-export const Button = props => {
+// TODO: reenable export for test
+const Button = props => {
   return (
     <button {...formatProps(props)}>
       {renderIcon(props)}

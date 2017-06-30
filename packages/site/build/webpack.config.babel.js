@@ -98,7 +98,13 @@ module.exports = {
       'rename-jsx-attributes-loader': path.join(
         __dirname,
         'rename-jsx-attributes-loader.js'
-      )
+      ),
+      'component-docs-loader': path.join(
+        __dirname,
+        'component-docs-loader',
+        'index.js'
+      ),
+      'docgen-loader': path.join(__dirname, 'docgen-loader.js')
     }
   }
 }
