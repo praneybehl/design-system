@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "syntax-export-extensions",
+    "transform-export-extensions",
+  ],
+  "presets": ["next/babel"]
+}

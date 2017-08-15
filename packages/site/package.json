@@ -9,8 +9,10 @@
     "npm": ">= 4.2"
   },
   "scripts": {
-    "site": "rimraf docs && concurrently \"webpack --watch --config ./build/webpack.config.babel.js\" \"node ./build/dev-server.js\"",
-    "start": "npm run site"
+    "dev": "next",
+    "deploy": "next build && next export -o docs && git add docs && git commit -m \"chore(site): regen\" && git push origin master",
+    "start": "npm run site",
+    "site": "rimraf docs && concurrently \"webpack --watch --config ./build/webpack.config.babel.js\" \"node ./build/dev-server.js\""
   },
   "author": "jaketrent",
   "license": "Apache-2.0",
@@ -23,7 +25,6 @@
     "@pluralsight/ps-design-system-normalize": "^3.0.24",
     "@pluralsight/ps-design-system-tab": "^5.0.1",
     "@pluralsight/ps-design-system-text": "^9.0.0",
-    "@pluralsight/ps-design-system-util": "^1.1.40",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
@@ -45,6 +46,7 @@
     "koa": "^2.2.0",
     "koa-mount": "^3.0.0",
     "koa-static": "^4.0.1",
+    "next": "^3.0.3",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.5",
