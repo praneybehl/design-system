@@ -28,7 +28,7 @@ const getFirstOrgRepoPage = async (
     const body = await github.repos.getForOrg(config)
     return body
   } catch (err) {
-    console.log('repo fetch page 1 fail', err)
+    console.log('failure on content read', err)
     return { data: [] }
   }
 }
