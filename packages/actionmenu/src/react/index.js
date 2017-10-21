@@ -18,41 +18,43 @@ const origins = {
 const menuPaddingVert = core.layout.spacingXXSmall
 const nestedMenuHorzOverlap = 0 // 3
 
-const Item = glamorous.button(
-  {
-    display: 'flex',
-    width: '100%',
-    alignItems: 'center',
-    lineHeight: core.type.lineHeightExtra,
-    fontWeight: core.type.fontWeightMedium,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    textAlign: 'left',
-    cursor: 'pointer',
-    border: 'none',
-    paddingTop: '0',
-    paddingBottom: '0',
-    transition: `background ${core.motion.speedXFast}`
-  },
-  ({ iconId }) =>
-    iconId
-      ? { paddingLeft: core.layout.spacingXSmall }
-      : { paddingLeft: core.layout.spacingMedium },
-  ({ nested }) =>
-    nested
-      ? { paddingRight: core.layout.spacingXSmall }
-      : { paddingRight: core.layout.spacingMedium },
-  ({ isActive }) =>
-    isActive
-      ? {
-          background: core.colors.bone,
-          outline: 'none'
-        }
-      : { background: 'none' }
-)
+const getItemStyles = props =>
+  glamor.css(
+    {
+      display: 'flex',
+      width: '100%',
+      alignItems: 'center',
+      lineHeight: core.type.lineHeightExtra,
+      fontWeight: core.type.fontWeightMedium,
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      textAlign: 'left',
+      cursor: 'pointer',
+      border: 'none',
+      paddingTop: '0',
+      paddingBottom: '0',
+      transition: `background ${core.motion.speedXFast}`
+    },
+    (({ iconId }) =>
+      iconId
+        ? { paddingLeft: core.layout.spacingXSmall }
+        : { paddingLeft: core.layout.spacingMedium })(props),
+    (({ nested }) =>
+      nested
+        ? { paddingRight: core.layout.spacingXSmall }
+        : { paddingRight: core.layout.spacingMedium })(props),
+    (({ isActive }) =>
+      isActive
+        ? {
+            background: core.colors.bone,
+            outline: 'none'
+          }
+        : { background: 'none' })(props),
+    ...props.css
+  )
 
-const IconComponent = props => (
+const IconComponent = props =>
   <Div
     display="inline-flex"
     alignItems="center"
@@ -60,13 +62,11 @@ const IconComponent = props => (
   >
     <Icon id={props.iconId} size={Icon.sizes.medium} />
   </Div>
-)
 
-const NestedArrow = _ => (
+const NestedArrow = _ =>
   <Div marginLeft="auto" paddingLeft={core.layout.spacingXSmall}>
     <Arrow />
   </Div>
-)
 
 const calcNestedMenuPosition = (menuWidth, origin) =>
   ({
@@ -129,8 +129,8 @@ class ItemComponent extends React.Component {
   }
   renderNested() {
     return this.state.isNestedRendered &&
-      this.props.nested &&
-      this.props.isActive
+    this.props.nested &&
+    this.props.isActive
       ? React.cloneElement(this.props.nested, {
           css: calcNestedMenuPosition(
             this.props.size.width,
@@ -144,23 +144,26 @@ class ItemComponent extends React.Component {
   render() {
     return (
       <div>
-        <Item
-          aria-haspopup={!!this.props.nested}
-          css={this.props.css}
-          className={this.props.className}
-          iconId={this.props.iconId}
-          isActive={this.props.isActive}
-          innerRef={el => (this.item = el)}
-          nested={this.props.nested}
-          onClick={this.props.onClick}
-          onKeyDown={this.handleKeyDown}
-          onMouseOver={this.handleMouseOver}
-          role="menuitem"
-        >
-          {this.props.iconId && <IconComponent iconId={this.props.iconId} />}
+        <button {...getItemStyles(this.props)}>
           {this.props.children}
-          {this.props.nested && <NestedArrow />}
-        </Item>
+        </button>
+        {/* {React.createElement(
+          this.props.href ? 'a' : 'button',
+          {
+            'aria-haspopup': !!this.props.nested,
+            className: this.props.className,
+            ...(this.props.innerRef ? { ref: this.props.innerRef } : {}),
+            onClick: this.props.onClick,
+            onKeyDown: this.handleKeyDown,
+            onMouseOver: this.handleMouseOver,
+            role: 'menuitem',
+            ...getItemStyles(this.props)
+          },
+          this.props.children
+          // this.props.iconId && <IconComponent iconId={this.props.iconId} />,
+          // this.props.children,
+          // this.props.nested && <NestedArrow />
+        )} */}
         {this.renderNested()}
       </div>
     )
@@ -197,7 +200,7 @@ DividerComponent.propTypes = {
   _onFocus: PropTypes.func
 }
 
-const Overlay = props => (
+const Overlay = props =>
   <Div
     position="fixed"
     height="100vh"
@@ -206,7 +209,6 @@ const Overlay = props => (
     left="0"
     onClick={props.onClick}
   />
-)
 
 const slide = glamor.css.keyframes({
   '100%': {

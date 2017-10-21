@@ -66,35 +66,21 @@ storiesOf('menu items', module)
   .addDecorator(bg)
   .add('one', _ =>
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
     </ActionMenu>
   )
   .add('multiple', _ =>
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
+      <ActionMenu.Item>Two item</ActionMenu.Item>
+      <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
   )
   .add('with icons', _ =>
     <ActionMenu>
-      <ActionMenu.Item iconId={Icon.ids.channel}>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.path}>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item iconId={Icon.ids.report}>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.channel}>One item</ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.path}>Two item</ActionMenu.Item>
+      <ActionMenu.Item iconId={Icon.ids.report}>Three item</ActionMenu.Item>
     </ActionMenu>
   )
   .add('long text', _ =>
@@ -122,24 +108,16 @@ storiesOf('dividers', module)
   .addDecorator(bg)
   .add('edge', _ =>
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
     </ActionMenu>
   )
   .add('sandwich', _ =>
     <ActionMenu>
-      <ActionMenu.Item>
-        One item
-      </ActionMenu.Item>
+      <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
-      <ActionMenu.Item>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three item
-      </ActionMenu.Item>
+      <ActionMenu.Item>Two item</ActionMenu.Item>
+      <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
   )
 
@@ -174,39 +152,25 @@ Object.keys(ActionMenu.origins).forEach(origin =>
         <ActionMenu.Item
           nested={
             <ActionMenu origin={origin}>
-              <ActionMenu.Item>
-                Nest 1
-              </ActionMenu.Item>
+              <ActionMenu.Item>Nest 1</ActionMenu.Item>
               <ActionMenu.Item
                 nested={
                   <ActionMenu origin={origin}>
-                    <ActionMenu.Item>
-                      Nest nest 1-1
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 1-2
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 1-3
-                    </ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
                   </ActionMenu>
                 }
               >
                 Nest 2
               </ActionMenu.Item>
               <ActionMenu.Divider />
-              <ActionMenu.Item>
-                Nest 3
-              </ActionMenu.Item>
+              <ActionMenu.Item>Nest 3</ActionMenu.Item>
               <ActionMenu.Item
                 nested={
                   <ActionMenu origin={origin}>
-                    <ActionMenu.Item>
-                      Nest nest 2-1
-                    </ActionMenu.Item>
-                    <ActionMenu.Item>
-                      Nest nest 2-2
-                    </ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
                   </ActionMenu>
                 }
               >
@@ -217,10 +181,16 @@ Object.keys(ActionMenu.origins).forEach(origin =>
         >
           One
         </ActionMenu.Item>
-        <ActionMenu.Item>
-          Two
-        </ActionMenu.Item>
+        <ActionMenu.Item>Two</ActionMenu.Item>
       </ActionMenu>
     </div>
   )
 )
+
+// const actionStory = storiesOf('with actions', module)
+//   .addDecorator(bg)
+//   .add('href', _ =>
+//     <ActionMenu>
+//       <ActionMenu.Item href="http://duckduckgo.com">One item</ActionMenu.Item>
+//     </ActionMenu>
+//   )
