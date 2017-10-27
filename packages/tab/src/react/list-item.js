@@ -3,18 +3,31 @@ import * as glamor from 'glamor'
 import glamorous from 'glamorous'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme/react'
 
-const barActiveStyles = {
-  color: core.colors.white,
+const getBarActiveStyles = ({ themeName }) => ({
   fontWeight: core.type.fontWeightMedium,
   paddingBottom: 0,
-  borderBottom: `${core.layout.spacingXXSmall} solid ${core.colors.orange}`
-}
-const barHoverStyles = {
-  color: core.colors.white,
-  borderBottom: `4px solid ${core.colors.gray02}`,
-  paddingBottom: 0
-}
+  borderBottom: `${core.layout.spacingXXSmall} solid ${core.colors.orange}`,
+  color: {
+    [themeNames.dark]: core.colors.white,
+    [themeNames.light]: core.colors.gray06
+  }[themeName]
+})
+
+const getBarHoverStyles = ({ themeName }) =>
+  ({
+    [themeNames.dark]: {
+      color: core.colors.white,
+      borderBottom: `4px solid ${core.colors.gray02}`,
+      paddingBottom: 0
+    },
+    [themeNames.light]: {
+      color: core.colors.gray06,
+      borderBottom: `4px solid ${core.colors.gray03}`,
+      paddingBottom: 0
+    }
+  }[themeName])
 
 const Bar = glamorous.div({
   display: 'flex',
@@ -39,31 +52,44 @@ const ListItem = glamorous.button(
     },
     ':first-child': {
       paddingLeft: 0
-    },
-    ':hover div': barHoverStyles,
-    ':focus div': barHoverStyles,
-    ':active div': barActiveStyles
+    }
   },
-  ({ active }) =>
-    active
+  props => ({
+    ':hover div': getBarHoverStyles(props),
+    ':focus div': getBarHoverStyles(props),
+    ':active div': getBarActiveStyles(props)
+  }),
+  ({ themeName }) => {
+    console.log('Theme', themeName)
+    return {
+      [themeNames.dark]: { color: core.colors.gray02 },
+      [themeNames.light]: { color: core.colors.gray03 }
+    }[themeName]
+  },
+  props =>
+    props.active
       ? {
-          ':hover div': barActiveStyles,
-          ':focus div': barActiveStyles,
-          '& div': barActiveStyles
+          ':hover div': getBarActiveStyles(props),
+          ':focus div': getBarActiveStyles(props),
+          '& div': getBarActiveStyles(props)
         }
       : null
 )
 
-const ListItemComponent = props => (
-  <ListItem
-    role="tab"
-    aria-selected={props.active}
-    onClick={props.onClick}
-    active={props.active}
-  >
-    <Bar>{props.children}</Bar>
-  </ListItem>
-)
+const ListItemComponent = (props, context) => {
+  console.log('component context', context)
+  return (
+    <ListItem
+      role="tab"
+      aria-selected={props.active}
+      onClick={props.onClick}
+      active={props.active}
+      themeName={context.themeName}
+    >
+      <Bar>{props.children}</Bar>
+    </ListItem>
+  )
+}
 
 ListItemComponent.propTypes = {
   active: PropTypes.bool,
@@ -72,6 +98,9 @@ ListItemComponent.propTypes = {
 }
 ListItemComponent.defaultProps = {
   active: false
+}
+ListItem.contextTypes = {
+  themeName: PropTypes.string
 }
 
 export default ListItemComponent
