@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots cell align center 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1s3pp0o=""
+      >
+        Cell aligned 
+        center
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell align left 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1rs9oz9=""
+      >
+        Cell aligned 
+        left
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell align right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-vjotjg=""
+      >
+        Cell aligned 
+        right
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell emphasis text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1ggdr4d=""
+      >
+        Cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1hlnuq0=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell flex 1 | 4 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1hlnuq0=""
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
+      >
+        Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1
+      </div>
+      <div
+        data-css-1hlnuq0=""
+        style={
+          Object {
+            "flex": "4",
+          }
+        }
+      >
+        Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4 Flex 4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell flex 2 | 1 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1hlnuq0=""
+      >
+        Flex 2
+      </div>
+      <div
+        data-css-1hlnuq0=""
+      >
+        Flex 1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell multiple text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1hlnuq0=""
+      >
+        Cell 1 text
+      </div>
+      <div
+        data-css-1hlnuq0=""
+      >
+        Cell 2 text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots cell text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1hlnuq0=""
+      >
+        Cell text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1xiw683=""
+      >
+        <span>
+          S
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort asc 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-10tgf40=""
+      >
+        sorted header
+        <span>
+          A
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1xiw683=""
+      >
+        header text
+        <span>
+          S
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader sort desc 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-10tgf40=""
+      >
+        sorted header
+        <span>
+          D
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots columnHeader text 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  >
+    <div
+      data-css-14j6dmy=""
+    >
+      <div
+        data-css-1xiw683=""
+      >
+        header text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots row one row, empty 1`] = `
+<div
+  data-css-63oe3q=""
+>
+  <div
+    data-css-14j6dmy=""
+  />
+</div>
+`;
+
+exports[`Storyshots table empty 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    data-css-63oe3q=""
+  />
+</div>
+`;
