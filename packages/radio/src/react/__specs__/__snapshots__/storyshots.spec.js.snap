@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots something default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      role="radiogroup"
+    >
+      <label>
+        <div
+          aria-checked={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={false}
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="red"
+        />
+        <div>
+          Red
+        </div>
+      </label>
+      <label>
+        <div
+          aria-checked={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={false}
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="green"
+        />
+        <div>
+          Green
+        </div>
+      </label>
+      <label>
+        <div
+          aria-checked={false}
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={false}
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="blue"
+        />
+        <div>
+          Blue
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots something one selected 1`] = `
+<div
+  style={
+    Object {
+      "background": "#181818",
+      "backgroundSize": "cover",
+      "bottom": 0,
+      "left": 0,
+      "overflow": "scroll",
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "transition": "background 300ms",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <div
+      role="radiogroup"
+    >
+      <label
+        data-css-o2ktyd=""
+      >
+        <div
+          aria-checked={false}
+          data-css-pbfy87=""
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-pgc406=""
+        >
+          Red
+        </div>
+      </label>
+      <label
+        data-css-o2ktyd=""
+      >
+        <div
+          aria-checked={true}
+          data-css-pbfy87=""
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={true}
+          data-css-gyrv08=""
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-pgc406=""
+        >
+          Green
+        </div>
+      </label>
+      <label
+        data-css-o2ktyd=""
+      >
+        <div
+          aria-checked={false}
+          data-css-pbfy87=""
+          onBlur={undefined}
+          onFocus={undefined}
+          role="radio"
+          tabIndex="-1"
+        />
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onChange={undefined}
+          readOnly={true}
+          tabIndex="tabIndex || 0/-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-pgc406=""
+        >
+          Blue
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
